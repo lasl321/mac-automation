@@ -3,11 +3,6 @@ import os
 import shutil
 import argparse
 
-
-def get_child_directories(parent_dir):
-    return os.listdir(parent_dir)
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Remove old directories.')
     parser.add_argument('--parent-directory', help='the path to the parent directory')
